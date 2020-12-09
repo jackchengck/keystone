@@ -6,9 +6,9 @@ import { permissions, isSignedIn, rules } from './access';
 import { permissionFields } from './fields';
 
 const cloudinary = {
-  cloudName: process.env.CLOUDINARY_CLOUD_NAME || '',
-  apiKey: process.env.CLOUDINARY_KEY || '',
-  apiSecret: process.env.CLOUDINARY_SECRET || '',
+  cloudName: process.env.CLOUDINARY_CLOUD_NAME || 'a',
+  apiKey: process.env.CLOUDINARY_KEY || 'a',
+  apiSecret: process.env.CLOUDINARY_SECRET || 'a',
 };
 
 const formatter = new Intl.NumberFormat('en-US', {
